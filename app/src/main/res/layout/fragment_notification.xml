@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.NotificationFragment">
+
+    <TextView
+        android:id="@+id/notification_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="Notifications"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ttoday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Today"
+        android:textColor="@color/cat_txt"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:text="Mark All As Read"
+        android:textSize="15sp"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notification_head" />
+
+    <RelativeLayout
+        android:id="@+id/relatve1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ttoday"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView1"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="7dp"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:gravity="fill"
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatve2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/relatve1"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="7dp"
+            android:gravity="fill"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatve3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/relatve2"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="7dp"
+            android:gravity="fill"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatve4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/relatve3"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="7dp"
+            android:gravity="fill"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/yyesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:text="Yesterday"
+        android:textColor="@color/cat_txt"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relatve4" />
+
+    <RelativeLayout
+        android:id="@+id/relatve5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/yyesterday"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView5"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="7dp"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:gravity="fill"
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatve6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/yyesterday"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="7dp"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:gravity="fill"
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatve7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/relatve6"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:text="Daily Feeding Reminder"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/textView7"
+            android:text="1h"
+            android:textColor="@color/cat_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="7dp"
+            android:text="Time:6:00AM\nReminder: It's time to feed Flock 123 (Layer Hens). Ensure to provide 10 kg of Layer Feed."
+            android:gravity="fill"
+            android:textColor="@color/cat_txt"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "541060102420",
+    "project_id": "chickease",
+    "storage_bucket": "chickease.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541060102420:android:b7e88283f29b0c4094aa01",
+        "android_client_info": {
+          "package_name": "com.example.chickease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANI86N2uafLSBZ2E52VQaq4f7PT_nn7Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
